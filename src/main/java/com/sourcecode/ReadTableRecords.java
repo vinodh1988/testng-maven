@@ -25,10 +25,15 @@ public class ReadTableRecords {
 				 //System.out.printf("%-10d %-20s%n", sno, name);
 				 logger.info("SNO: {}, NAME: {}", sno, name); // Log the retrieved data
 			 }
-			} catch (SQLException e) {
-				//System.err.println("Error executing select query: " + e.getMessage());
-				logger.error("Error executing select query: {}", e.getMessage(), e);
-			} finally {
+			 }catch (SQLException e) {
+					//System.err.println("Error executing select query: " + e.getMessage());
+					logger.error("Error executing select query: {}", e.getMessage(), e);
+				} 
+			catch (Exception e) {
+				//System.err.println("Unexpected error: " + e.getMessage());
+				logger.error("Unexpected error: {}", e.getMessage(), e);
+			}
+			finally {
 				try {
 					connection.close();
 				} catch (SQLException e) {
