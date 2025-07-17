@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-12T08:22:21 IST" name="Surefire suite" finished-at="2025-06-12T08:22:21 IST" duration-ms="43">
+  <suite started-at="2025-07-18T03:49:52 IST" name="Surefire suite" finished-at="2025-07-18T03:49:52 IST" duration-ms="50">
     <groups>
     </groups>
-    <test started-at="2025-06-12T08:22:21 IST" name="Surefire test" finished-at="2025-06-12T08:22:21 IST" duration-ms="43">
+    <test started-at="2025-07-18T03:49:52 IST" name="Surefire test" finished-at="2025-07-18T03:49:52 IST" duration-ms="50">
       <class name="com.testcode.MathTest">
-        <test-method signature="testAdd()[pri:0, instance:com.testcode.MathTest@2aece37d]" started-at="2025-06-12T08:22:21 IST" name="testAdd" finished-at="2025-06-12T08:22:21 IST" duration-ms="5" status="PASS">
+        <test-method signature="testAdd()[pri:0, instance:com.testcode.MathTest@5c1a8622]" started-at="2025-07-18T03:49:52 IST" name="testAdd" finished-at="2025-07-18T03:49:52 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAdd -->
-        <test-method signature="testDivide()[pri:0, instance:com.testcode.MathTest@2aece37d]" started-at="2025-06-12T08:22:21 IST" name="testDivide" finished-at="2025-06-12T08:22:21 IST" duration-ms="0" status="PASS">
+        <test-method signature="testDivide()[pri:0, instance:com.testcode.MathTest@5c1a8622]" started-at="2025-07-18T03:49:52 IST" name="testDivide" finished-at="2025-07-18T03:49:52 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDivide -->
-        <test-method signature="testDivideByZero()[pri:0, instance:com.testcode.MathTest@2aece37d]" started-at="2025-06-12T08:22:21 IST" name="testDivideByZero" finished-at="2025-06-12T08:22:21 IST" duration-ms="0" status="PASS">
+        <test-method signature="testDivideByZero()[pri:0, instance:com.testcode.MathTest@5c1a8622]" started-at="2025-07-18T03:49:52 IST" name="testDivideByZero" finished-at="2025-07-18T03:49:52 IST" duration-ms="1" status="PASS">
           <exception class="java.lang.ArithmeticException">
             <message>
               <![CDATA[Division by zero is not allowed.]]>
@@ -63,11 +63,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDivideByZero -->
-        <test-method signature="testMultiply()[pri:0, instance:com.testcode.MathTest@2aece37d]" started-at="2025-06-12T08:22:21 IST" name="testMultiply" finished-at="2025-06-12T08:22:21 IST" duration-ms="0" status="PASS">
+        <test-method signature="testMultiply()[pri:0, instance:com.testcode.MathTest@5c1a8622]" started-at="2025-07-18T03:49:52 IST" name="testMultiply" finished-at="2025-07-18T03:49:52 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMultiply -->
-        <test-method signature="testSubtract()[pri:0, instance:com.testcode.MathTest@2aece37d]" started-at="2025-06-12T08:22:21 IST" name="testSubtract" finished-at="2025-06-12T08:22:21 IST" duration-ms="0" status="PASS">
+        <test-method signature="testSubtract()[pri:0, instance:com.testcode.MathTest@5c1a8622]" started-at="2025-07-18T03:49:52 IST" name="testSubtract" finished-at="2025-07-18T03:49:52 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSubtract -->
