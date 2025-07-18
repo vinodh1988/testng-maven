@@ -58,15 +58,7 @@
   <artifactId>maven-surefire-plugin</artifactId>
   <version>3.1.2</version>
   <configuration>
-    <properties>
-      <property>
-        <name>usedefaultlisteners</name>
-        <value>false</value>
-      </property>
-    </properties>
-    <reportFormat>brief</reportFormat>
-    <useFile>true</useFile>
-    <redirectTestOutputToFile>false</redirectTestOutputToFile>
+   
     <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
   </configuration>
 </plugin>
