@@ -42,7 +42,7 @@
         </dependencies>
         <build>
             <plugins>
-                <plugin>
+              <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-surefire-plugin</artifactId>
     <version>3.2.5</version>
@@ -50,19 +50,22 @@
         <includes>
             <include>**/*Test.java</include>
         </includes>
-        <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
+        <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+        </suiteXmlFiles>
+        <systemPropertyVariables>
+            <usedefaultlisteners>false</usedefaultlisteners>
+        </systemPropertyVariables>
         <properties>
             <property>
-                <name>usedefaultlisteners</name>
-                <value>false</value>
-            </property>
-            <property>
                 <name>listener</name>
-                <value>org.testng.reporters.JUnitXMLReporter</value>
+                <value>org.testng.reporters.XMLReporter</value>
             </property>
         </properties>
+        <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
     </configuration>
 </plugin>
+
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
