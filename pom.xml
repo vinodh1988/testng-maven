@@ -58,7 +58,12 @@
   <artifactId>maven-surefire-plugin</artifactId>
   <version>3.1.2</version>
   <configuration>
-   
+    <includes>
+      <include>**/*Test.java</include>
+      <include>**/*Tests.java</include>
+      <include>**/*TestCase.java</include>
+      <include>**/*.java</include>
+     </includes>
     <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
   </configuration>
 </plugin>
