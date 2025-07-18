@@ -19,7 +19,7 @@ public class DataDrivenTestExcel {
     @DataProvider(name = "mathData")
     public Object[][] mathDataProvider() throws IOException {
         List<Object[]> testData = new ArrayList<>();
-        FileInputStream fis = new FileInputStream("/home/azureuser/datadriven.xlsx");
+        FileInputStream fis = new FileInputStream("datadriven.xlsx");
         Workbook workbook = new XSSFWorkbook(fis);
         Sheet sheet = workbook.getSheetAt(0);
 
