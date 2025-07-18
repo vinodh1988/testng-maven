@@ -53,18 +53,27 @@
   <build>
 
   <plugins>
-    <plugin>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-surefire-plugin</artifactId>
-      <version>3.2.5</version>
-      <configuration>
-        <testNGArtifactName>org.testng:testng</testNGArtifactName>
-        <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
-        <reportFormat>brief</reportFormat>
-        <useFile>false</useFile>
-      </configuration>
-    </plugin>
-
+   <plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-surefire-plugin</artifactId>
+  <version>3.2.5</version>
+  <configuration>
+    <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
+    <useFile>true</useFile>
+    <properties>
+      <property>
+        <name>usedefaultlisteners</name>
+        <value>false</value>
+      </property>
+    </properties>
+    <systemPropertyVariables>
+      <property>
+        <name>testng.junit</name>
+        <value>true</value>
+      </property>
+    </systemPropertyVariables>
+  </configuration>
+</plugin>
   
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
